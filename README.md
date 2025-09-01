@@ -40,32 +40,36 @@ Os usuários devem conseguir:
 
 ### Construído com
 
-- HTML5 semântico
-- CSS custom
+- HTML5 semântico e CSS
 - JavaScript
 - Mobile-first workflow
 
 ### O que aprendi
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+Durante esse projeto consegui evoluir bastante em JavaScript, especialmente em manipulação de dados e interação com o DOM.
 
-To see how you can add code snippets, see below:
+- Aprendi a utilizar atributos data- para acessar e manipular informações diretamente no JavaScript, tornando o código mais organizado e fácil de manter.
+- Consegui implementar a lógica de troca da imagem principal do produto usando getAttribute, permitindo que a imagem exibida mude conforme a miniatura clicada pelo usuário.
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-
+Exemplo do que desenvolvi:
 ```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
+const updateImage = (index) => {
+  thumbnails.forEach((thumb) => thumb.classList.remove("active"));
+  thumbnails[index].classList.add("active");
+
+  const newImageSrc = thumbnails[index].getAttribute("data-main");
+  mainImage.src = newImageSrc.replace("-thumbnail", "");
+
+  currentImageIndex = index;
 };
+
+thumbnails.forEach((thumbnail, index) => {
+  thumbnail.addEventListener("click", () => {
+    updateImage(index);
+  });
+});
 ```
+Esse aprendizado me ajudou a entender melhor como trabalhar com eventos, atributos HTML personalizados e atualização dinâmica de elementos.
 
 ### Desenvolvimento contínuo
 
