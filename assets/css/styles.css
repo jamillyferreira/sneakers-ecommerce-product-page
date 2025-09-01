@@ -39,11 +39,7 @@
   /* Shadows */
   --shadow-cart: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
-  /* Media Queries */
-  --breakpoint-mobile: 375px;
-  --breakpoint-tablet: 768px;
-  --breakpoint-laptop: 992px;
-  --breakpoint-desktop: 1440px;
+
 }
 
 /* MOBILE FIRST */

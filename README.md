@@ -32,8 +32,8 @@ Os usuários devem conseguir:
 
 ### Links
 
-- Solução no Frontend Mentor: [Ver solução](https://your-solution-url.com)
-- Site online (deploy): [Acessar site](https://your-live-site-url.com)
+- Solução no Frontend Mentor: [Ver solução](https://www.frontendmentor.io/solutions/e-commerce-product-page-responsive-fch2VycdLh)
+- Site online (deploy): [Acessar site](https://sneakers-ecommerce-product-page-vert.vercel.app/)
 
 ## Meu processo
 
@@ -51,6 +51,7 @@ Durante esse projeto consegui evoluir bastante em JavaScript, especialmente em m
 - Consegui implementar a lógica de troca da imagem principal do produto usando getAttribute, permitindo que a imagem exibida mude conforme a miniatura clicada pelo usuário.
 
 Exemplo do que desenvolvi:
+
 ```js
 const updateImage = (index) => {
   thumbnails.forEach((thumb) => thumb.classList.remove("active"));
@@ -68,6 +69,7 @@ thumbnails.forEach((thumbnail, index) => {
   });
 });
 ```
+
 Esse aprendizado me ajudou a entender melhor como trabalhar com eventos, atributos HTML personalizados e atualização dinâmica de elementos.
 
 ### Desenvolvimento contínuo
