@@ -99,9 +99,6 @@ addToCart.addEventListener("click", () => {
   if (quantity === 0) return;
 
   cartQuantity = quantity;
-  console.log(
-    `Adicionado ${quantity} itens. Total no carrinho: ${cartQuantity}`
-  );
   updateCartState();
 });
 
@@ -110,6 +107,10 @@ if (cartDeleteBtn) {
     cartQuantity = 0;
     updateCartState();
     updateQuantity(0);
+
+    setTimeout(() => {
+      cartModal.classList.remove("active");
+    }, 500);
   });
 }
 
