@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon-32x32.png"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Css styles -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <!-- Script js -->
+    <script src="assets/js/script.js" defer></script>
+    <title>Sneakers e-commerce</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav" aria-label="Navegação Principal">
+        <div class="nav__left">
+          <button
+            type="button"
+            aria-label="Abrir menu"
+            aria-expanded="false"
+            aria-controls="main-menu"
+            class="nav__toggle"
+            id="menu-btn"
+          >
+            <img src="assets/images/icon-menu.svg" alt="" aria-hidden="true" />
+          </button>
+
+          <a href="/" aria-current="page">
+            <img
+              src="assets/images/logo.svg"
+              alt="Home - Nome da loja"
+              class="nav__log"
+            />
+          </a>
+
+          <div class="nav__overlay" id="overlay" aria-hidden="true"></div>
+          <!-- Container do menu mobile -->
+          <div class="nav__menu" id="nav-menu">
+            <button class="nav__close" id="close-btn" aria-label="Fechar menu">
+              <img
+                src="assets/images/icon-close.svg"
+                aria-hidden="true"
+                alt=""
+              />
+            </button>
+            <!-- Lista de navegação -->
+            <ul class="nav__list" id="main-menu" role="menu">
+              <li class="nav__item" role="none">
+                <a href="#" class="nav__link" role="menuitem">Collections</a>
+              </li>
+              <li class="nav__item" role="none">
+                <a href="#" class="nav__link" role="menuitem">Men</a>
+              </li>
+              <li class="nav__item" role="none">
+                <a href="#" class="nav__link nav__link--active" role="menuitem"
+                  >Women</a
+                >
+              </li>
+              <li class="nav__item" role="none">
+                <a href="#" class="nav__link" role="menuitem">About</a>
+              </li>
+              <li class="nav__item" role="none">
+                <a href="#" class="nav__link" role="menuitem">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="nav__right">
+          <div class="cart__container">
+            <button
+              class="cart__button"
+              id="cart-btn"
+              aria-label="Carrinho de compras"
+            >
+              <img
+                src="assets/images/icon-cart.svg"
+                alt="Icone do carrinho de compra"
+                aria-hidden="true"
+              />
+              <div class="cart__count" id="count-cart">0</div>
+            </button>
+          </div>
+          <img
+            src="assets/images/image-avatar.png"
+            class="cart-avatar"
+            alt="Minha conta"
+          />
+        </div>
+
+        <div class="cart__modal" id="cart-modal" aria-label="Carrinho aberto">
+          <div class="cart__header">Cart</div>
+
+          <div class="cart__container-items" aria-label="Itens do carrinho">
+            <div class="cart__items" id="cart-items">
+              <img
+                src="assets/images/image-product-1-thumbnail.jpg"
+                class="cart__thumbnail"
+                alt=""
+              />
+              <div class="items-info">
+                <p class="info__title">Fall Limited Edition Sneakers</p>
+                <div class="info__group-price">
+                  <p class="price">$125.00 x</p>
+                  <div class="count">3</div>
+                  <p class="total-amount">$375.00</p>
+                </div>
+              </div>
+              <button class="cart__delete-button" id="cart-delete">
+                <img src="assets/images/icon-delete.svg" alt="" />
+              </button>
+            </div>
+
+            <button type="button" class="cart__checkout-button">
+              Checkout
+            </button>
+          </div>
+          <p class="cart__empty active" id="cart-empry">Your cart is empty</p>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="product-hero">
+        <img
+          src="assets/images/image-product-1.jpg"
+          alt="Imagem do produto"
+          class="image image-preview"
+          id="main-image"
+        />
+        <button
+          class="button-arrow button-arrow--next"
+          aria-label="Proxima imagem"
+          id="next-btn"
+        >
+          <img src="assets/images/icon-next.svg" alt="" />
+        </button>
+        <button
+          class="button-arrow button-arrow--previous"
+          aria-label="Imagem anterior"
+          id="prev-btn"
+        >
+          <img src="assets/images/icon-previous.svg" alt="" />
+        </button>
+
+        <div class="thumb-gallery">
+          <img
+            src="assets/images/image-product-1-thumbnail.jpg"
+            data-main="./assets/images/image-product-1-thumbnail.jpg"
+            alt="Thumbnail 1"
+            class="thumb-pic active"
+          />
+          <img
+            src="assets/images/image-product-2-thumbnail.jpg"
+            data-main="./assets/images/image-product-2-thumbnail.jpg"
+            alt="Thumbnail 2"
+            class="thumb-pic"
+          />
+          <img
+            src="assets/images/image-product-3-thumbnail.jpg"
+            data-main="./assets/images/image-product-3-thumbnail.jpg"
+            alt="Thumbnail 3"
+            class="thumb-pic"
+          />
+          <img
+            src="assets/images/image-product-4-thumbnail.jpg"
+            data-main="./assets/images/image-product-4-thumbnail.jpg"
+            alt="Thumbnail 4"
+            class="thumb-pic"
+          />
+        </div>
+      </section>
+
+      <section class="product">
+        <h4 class="product__company">Sneakers company</h4>
+        <h1 class="product__title">Fall Limited Edition Sneakers</h1>
+        <p class="product__description">
+          These low-profile sneakers are your perfect casual wear companion.
+          Featuring a durable rubber outer sole, they will withstand everything
+          the weather can offer.
+        </p>
+
+        <div class="product__price">
+          <div class="product__price-group">
+            <span class="product__price--new">$125.00</span>
+            <div class="product__price--discount">50%</div>
+          </div>
+          <span class="product__price--old">$250.00</span>
+        </div>
+
+        <div class="product__actions">
+          <div class="product__quantity">
+            <button
+              class="product__quantity-button"
+              id="decrease-qty"
+              aria-label="Diminuir quantidade"
+            >
+              <img src="assets/images/icon-minus.svg" alt="" />
+            </button>
+
+            <div class="product__quantity-value" id="quantity-value">0</div>
+            <button
+              class="product__quantity-button"
+              id="increase-qty"
+              aria-label="Aumentar quantidade"
+            >
+              <img src="assets/images/icon-plus.svg" alt="" />
+            </button>
+          </div>
+          <button
+            class="product__add-button"
+            id="add-to-cart"
+            aria-label="Adicionar ao carrinho"
+          >
+            <img src="assets/images/icon-cart.svg" alt="" />
+            Add to cart
+          </button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
