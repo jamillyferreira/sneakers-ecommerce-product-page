@@ -21,7 +21,6 @@ Esta é uma solução para o desafio [E-commerce product page challenge on Front
 Os usuários devem conseguir:
 
 - Visualizar o layout ideal do site dependendo do tamanho da tela do dispositivo
-- Ver os estados de hover em todos os elementos interativos da página
 - Abrir a galeria (lightbox) ao clicar na imagem principal do produto
 - Alternar a imagem principal clicando nas miniaturas
 - Adicionar itens ao carrinho

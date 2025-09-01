@@ -131,8 +131,8 @@
         </div>
       </nav>
     </header>
-    <main class="main">
-      <section class="product-hero">
+    <main class="product">
+      <section class="product__hero">
         <img
           src="assets/images/image-product-1.jpg"
           alt="Imagem do produto"
@@ -182,7 +182,7 @@
         </div>
       </section>
 
-      <section class="product">
+      <section class="product__info">
         <h4 class="product__company">Sneakers company</h4>
         <h1 class="product__title">Fall Limited Edition Sneakers</h1>
         <p class="product__description">
@@ -229,5 +229,66 @@
         </div>
       </section>
     </main>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <div class="lightbox__overlay" id="lightbox-overlay"></div>
+      <div class="lightbox__content">
+        <button
+          type="button"
+          class="lightbox__close-btn"
+          id="lightbox-close-btn"
+          aria-label="Fechar lightbox"
+        >
+          <img src="assets/images/icon-close.svg" alt="" />
+        </button>
+
+        <div class="lightbox__main">
+          <button
+            class="lightbox__arrow lightbox__arrow--prev"
+            id="lightbox-prev"
+            aria-label="Imagem anterior"
+          >
+            <img src="assets/images/icon-previous.svg" alt="" />
+          </button>
+
+          <img
+            src="assets/images/image-product-1.jpg"
+            alt="Produto ampliado"
+            id="lightbox-image"
+          />
+
+          <button
+            class="lightbox__arrow lightbox__arrow--next"
+            id="lightbox-next"
+            aria-label="Próxima imagem"
+          >
+            <img src="assets/images/icon-next.svg" alt="" />
+          </button>
+        </div>
+
+        <div class="lightbox__thumbnails">
+          <img
+            src="assets/images/image-product-1-thumbnail.jpg"
+            data-main="./assets/images/image-product-1.jpg"
+            class="thumb"
+          />
+          <img
+            src="assets/images/image-product-2-thumbnail.jpg"
+            data-main="./assets/images/image-product-2.jpg"
+            class="thumb"
+          />
+          <img
+            src="assets/images/image-product-3-thumbnail.jpg"
+            data-main="./assets/images/image-product-3.jpg"
+            class="thumb"
+          />
+          <img
+            src="assets/images/image-product-4-thumbnail.jpg"
+            data-main="./assets/images/image-product-4.jpg"
+            class="thumb"
+          />
+        </div>
+      </div>
+    </div>
   </body>
 </html>
